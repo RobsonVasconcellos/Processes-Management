@@ -1,0 +1,26 @@
+.tabela {
+  width: 100%;
+}
+
+td, th{
+  border-bottom: 1px solid rgba(167, 167, 167, 0.527);
+  padding: 12px 0;
+}
+
+td {
+  text-align: center;
+}
+
+.cabecalho-trilha {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 32px;
+}
+
+.cabecalho-trilha * {
+  padding: 0;
+}
+
+.cabecalho-trilha__fechar {
+  cursor: pointer;
+}

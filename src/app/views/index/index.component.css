@@ -1,0 +1,74 @@
+.demo-table {
+    width: 100%;
+    box-shadow: none;
+  }
+  
+  .mat-row .mat-cell {
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+    cursor: pointer;
+  }
+  
+  .mat-row:hover .mat-cell {
+    border-color: currentColor;
+  }
+  
+  .demo-row-is-clicked {
+    font-weight: bold;
+  }
+  
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    padding: 32px;
+  }
+
+  .card:not(:last-child) {
+      margin-right: 16px;
+  }
+
+  .titulo{
+      text-align: center;
+  }
+
+.divs{
+  display: inline-block;
+}
+
+.tabela {
+  width: 100%;
+}
+
+td{
+  text-align: center;
+}
+
+.navbar {
+  height: 100px;
+  background-color: transparent;
+  box-shadow: 3px 0px 8px rgba(0, 0, 0, 0.315);
+}
+
+.navbar__title {
+  font-size: 24px;
+  letter-spacing: 4px;
+}
+
+.navbar__img {
+  width: 70px;
+  margin-right: 24px;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.barranavega form {
+  margin-left: 1000px;
+}

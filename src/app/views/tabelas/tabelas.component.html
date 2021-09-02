@@ -1,0 +1,195 @@
+<div class="cabecalho-trilha">
+  <div class="cabecalho-trilha__info">
+    <ul>
+      <li><strong>Processo:</strong>WM02351/21ES</li>
+      <li><strong>Cliente:</strong> TP LINK do Brasil Ltda</li>
+      <li><Strong>Trilha:</Strong>010251</li>
+    </ul>
+    <mat-form-field appearance="fill">
+      <mat-label>Opções <mat-icon>autorenew</mat-icon></mat-label>
+      <mat-select>
+        <mat-option value="one">Reagendar Evento <mat-icon></mat-icon></mat-option>
+        <mat-option value="two">Cancelar evento <mat-icon></mat-icon></mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <button mat-fab color="primary" aria-label="Example icon button with a delete icon">
+    <mat-icon class="cabecalho-trilha__fechar" (click)="fechar()">close</mat-icon>
+  </button>
+</div>
+  <mat-accordion>
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Pré-Embarque
+        </mat-panel-title>
+        <mat-panel-description>
+          Burocracia que deve ser concluída antes do embarque da carga
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <table class="tabela">
+        <thead>
+          <tr>
+            <th>
+              Evento
+            </th>
+            <th>
+              <button mat-raised-button color="primary"> <a href="http://wm.conexos.cloud/login#/cadastro" target="_blank" style="color: white; text-decoration: none;">Pedido</a></button>
+            </th>
+            <th>
+              <button mat-raised-button color="primary"> <a href="http://wm.conexos.cloud/login#/cadastro" target="_blank" style="color: white; text-decoration: none;">Cad Processo</a></button>
+            </th>
+            <th>
+              <button mat-raised-button color="primary"> <a href="http://wm.conexos.cloud/login#/cadastro" target="_blank" style="color: white; text-decoration: none;">Invoice</a></button>
+            </th>
+            <th>
+              <button mat-raised-button color="Disabled" style="color: black;">Embarque</button>
+            </th>
+            <th>
+              <button mat-raised-button color="primary"> <a href="http://wm.conexos.cloud/login#/cadastro" target="_blank" style="color: white; text-decoration: none;">BL</a></button>
+            </th>
+            <th>
+              <button mat-raised-button color="Disabled" style="color: black;">ETA</button>
+            </th>
+            <th>
+              <button mat-raised-button color="Disabled" style="color: black;">Presença</button>
+            </th>
+            <th>
+              <button mat-raised-button color="Disabled" style="color: black;">Registro DI</button>
+            </th>
+            <th>
+              <button mat-raised-button color="Disabled" style="color: black;">Faturamento</button>
+            </th>
+            <th>
+              <button mat-raised-button color="Disabled" style="color: black;">Carregamento</button>
+            </th>
+            <th>
+              <button mat-raised-button color="Disabled" style="color: black;">Entrega</button>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Data Prevista
+            </td>
+            <td>
+              07/01/2021
+            </td>
+            <td>
+              09/01/2021
+            </td>
+            <td>
+              19/01/2021
+            </td>
+            <td>
+              <s>20/01/2021</s><br>
+                 21/01/2021
+            </td>
+            <td>
+              01/02/2021
+            </td>
+            <td>
+              05/02/2021
+            </td>
+            <td>
+              28/02/2021
+            </td>
+            <td>
+              01/03/2021
+            </td>
+            <td>
+              02/03/2021
+            </td>
+            <td>
+              03/03/2021
+            </td>
+            <td>
+              05/30/3021
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Data Realizada
+            </td>
+            <td>
+              07/01/2021
+            </td>
+            <td style="color: red;">
+              10/01/201
+            </td>
+            <td style="color:green;">
+              18/01/2021
+            </td>
+            <td>
+              01/01/2021
+            </td>
+            <td>
+              03/03/03
+            </td>
+            <td>
+              03/03/03
+            </td>
+            <td>
+              03/03/03
+            </td>
+            <td>
+              03/03/03
+            </td>
+            <td>
+              03/03/03
+            </td>
+            <td>
+              03/03/03
+            </td>
+            <td>
+              03/03/03
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Detalhes  
+            </td>
+            <td>
+              Notificado em: <br> 07/01/2021 as 09:51 <br><br> Realizado por: <br> Carlos|10:16
+            </td>
+            <td>
+              Notificado em: <br> 09/01/2021 as 10:15 <br><br> Realizado por: <br> Marcelo|14:35
+            </td>
+            <td>
+              Notificado em: <br> 19/01/2021 as 14:15 <br><br> Realizado por: <br> Wellginton|19:15
+            </td>
+            <td>
+              Notificado em: <br> 20/01/2021 as 14:15 <br><br> Reagendado em: <br> 20/01/2021
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Em Trânsito
+        </mat-panel-title>
+        <mat-panel-description>
+          Currently I am {{panelOpenState ? 'open' : 'closed'}}
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>I'm visible because I am open</p>
+    </mat-expansion-panel>
+  </mat-accordion>

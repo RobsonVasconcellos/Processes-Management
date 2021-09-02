@@ -1,0 +1,52 @@
+<div class="barranavega">
+    <mat-toolbar class="navbar">
+      <img src="/assets/wm.png" class="navbar__img">
+      <h1 class="navbar__title">REAGENDAMENTO DE EVENTOS</h1>
+    </mat-toolbar>
+</div>
+
+<div class="container">
+  <mat-card class="card">
+      <mat-card-title class="titulo" style="color: green; text-align: center;">Reagende seu Evento <mat-icon>event</mat-icon></mat-card-title>
+      <div class="formulario">
+        <mat-form-field appearance="fill" style="width: 100%;">
+          <label for=""></label>
+          <mat-label>Identificação do Evento</mat-label>
+          <input matInput>
+        </mat-form-field>
+        <mat-form-field appearance="fill" style="width: 100%;">
+          <mat-label>Grupo do Evento</mat-label>
+          <mat-select>
+            <mat-option value="one">Humano</mat-option>
+            <mat-option value="two">Sistêmico</mat-option>
+            <mat-option value="two">Robótico</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="fill" style="width: 100%;">
+          <mat-label>Setor Responsável</mat-label>
+          <mat-select>
+            <mat-option value="one">SGI</mat-option>
+            <mat-option value="two">SETEC</mat-option>
+            <mat-option value="two">SEAFI</mat-option>
+            <mat-option value="two">SEFIS</mat-option>
+            <mat-option value="two">SELOG</mat-option>
+            <mat-option value="two">SEOPE</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="fill" style="width: 100%;">
+          <mat-label>Grau De Severidade: <strong style="color: red;">Urgente</strong><mat-icon>local_fire_department</mat-icon></mat-label>
+          <input matInput disabled>
+        </mat-form-field>
+      </div>
+      <h2 style="text-align: center; color: #00B0F0;">Escolha uma nova data para o evento:</h2>
+      <div class="calendario">
+        <mat-card class="demo-inline-calendar-card">
+          <mat-calendar (selectedChange)="selected = $event"></mat-calendar>
+        </mat-card>
+      </div>
+      <br>
+      <div class="botaoevento">
+        <button mat-raised-button color="primary"><a href="/" style="color: white; text-decoration: none;">Reagendar Evento</a></button>
+      </div>
+  </mat-card>
+</div>
